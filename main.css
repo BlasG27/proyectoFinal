@@ -1,0 +1,408 @@
+/* ---------------ESTILOS EN GENERAL----------------- */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Fira Sans', sans-serif;
+    background-color: rgb(241, 241, 229);
+}
+.resaltar{
+    color: rgb(177, 177, 53);
+}
+/* -------------ESTILOS DE MI NAV------------------ */
+
+div h2{
+    font-size: 18px;
+}
+
+.nav ul{
+    display: none;
+}
+
+.barraDeNav{
+    background-color: yellow;
+}
+
+.nav{
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    line-height: 70px;
+    font-size: 1.5rem;
+}
+
+.nav ul{
+    width: auto;
+}
+
+.nav-item{
+    display: block;
+    margin: 0 5px;
+    transition-timing-function: ease;
+    transition-delay: 0.1s;
+}
+
+.nav-link{
+    transition-timing-function: ease;
+    transition-delay: 0.1s;
+}
+
+.nav-item:hover{
+    background-color: black;
+}
+
+.nav-link:hover{
+    color: white !important;
+}
+
+.nav-item .nav-link{
+    height: 90px;
+    text-decoration: none;
+    color: black;
+}
+/* -----------------ESTILOS DE MI HEADER------------- */
+
+.encabezado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.encabezado h1{
+    font-size: 50px;
+}
+
+header p{
+    font-size: 30px;
+}
+
+/* -----------------ESTILOS DE MI MAIN--------------- */
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mates {
+    background-image: url("imagenes/productos.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 280px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.munecos{
+    background-image: url("imagenes/nosotros.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 280px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mates a, .munecos a{
+    color: rgb(209, 231, 9);
+    text-decoration: none;
+}
+
+.descripcion-producto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.descripcion-producto p, h2{
+    text-align: center;
+}
+
+.about-imagen{
+    height: 310px;
+}
+
+.giftcard{
+    height: 310px;
+}
+.about,.apartado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* --------------------ESTILOS DE MI MAIN, PARTE ABOUT---------- */
+
+.main-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-imagen{
+    width: 300px;
+}
+.about{
+    display: flex;
+}
+
+.about p{
+    margin: 20px;
+    font-size: 35px;
+}
+
+/* ----------------ESTILOS HEADER, GIFTCARD-------------------- */
+
+.encabezado p{
+    text-align: center;
+}
+
+/* -----------ESTILOS DE MI MAIN, PARTE GIFTCARD-------------- */
+
+.apartado{
+    display: flex;
+    justify-content: space-between;
+}
+
+.apartado p{
+    font-size: 35px ;
+    text-align: center;
+} 
+
+#giftcard{
+    text-align: center;
+}
+/* --------------------MAIN PRODUCTOS---------------------- */
+
+.encabezado-productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 400px;
+}
+ 
+/* -------------------MAIN CONTACTOS------------------------ */
+
+.main-contacto{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 500px;
+}
+
+.formulario{
+    background-color: yellow;
+    width: 250px;
+    border: solid 4px;
+}
+.formulario-contacto{
+    display: block;
+}
+
+.redes-logo{
+    height: 25px;
+}
+
+#whap-num{
+    display: inline;
+}
+
+/* --------------------ESTILOS DE MI FOOTER---------------- */
+
+.footer{
+    background-color: yellow;
+    border: solid  black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer h2{
+    margin: 15px 20px;
+}
+
+.footer-li{
+    display: block;
+}
+
+.footer ul{
+    margin: 0 5px;
+}
+
+.footer-li a{
+    text-decoration: none;
+}
+
+/* ESTILOS MEDIA QUERIA PARA EL MAIN DE MI NOSOTROS.HTML CON CONFIGURACION PARA 320PX */
+
+@media screen and (min-width:321px) {
+    .about-imagen{
+        width: 300px;
+    } 
+}
+
+/* COMIENZO MEDIA QUERIE INDEX.MAIN */
+
+/* CONFIGURACION MEDIA QUERIE PARA DISPOSITIVOS 426PX */
+@media screen and (min-width:426px) {
+
+    div h2{
+        font-size: 30px;
+    }
+
+    /* ESTILO DE MI FOOTER(generales) */
+    .footer-li{
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    /* UTILIZO ESTA CONFIG DE MEDIA QUERIE PARA ESTILAR EL MAIN DE MI NOSOTROS.HTML */
+
+    .main-nosotros{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        height: 600px;
+    }
+    
+    .main-nosotros div p{
+        font-size: 28px;
+    }
+    /* UTILIZO ESTA CONFIGURACION DE MEDIA QUERIE PARA EL MAIN DE MI GIFTCARD.HTML */
+#giftcard{
+    font-size: 30px;
+    text-align: center;
+}
+
+.giftcard1{
+    height: 400px;
+}
+
+.section-gift-descrip{
+    font-size: 30px ;
+    text-align: center;
+}
+
+.main-giftcard{
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+}
+
+.main-giftcard div{
+    margin:0 30px;
+}
+
+.main-giftcard div p{
+    font-size: 30px;
+}
+}
+@media screen and (min-width:430px) {
+
+    /* ESTILOS DE MI HEADER */
+
+.encabezado{
+    font-size: 35px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header p{
+    font-size: 30px;
+}
+
+.encabezado h1,.encabezado p{
+    animation-name: fade-in;
+    animation-timing-function: ease;
+    animation-duration: 1.2s;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+        transform: translatex(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+
+    /* ESTILOS DE MI MAIN */
+    #main2{
+        display: block;
+    }
+    .productos{
+        display: flex;
+        flex-direction: row;
+    }
+    .descripcion-producto{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .descripcion-producto p, h2{
+        text-align: center;
+    }
+    
+    .about-imagen{
+        height: 310px;
+    }
+    
+    .giftcard{
+        height: 310px;
+    }
+    .about,.apartado{
+        flex-direction: row;
+    }
+}
+
+/* CONFIGURACION MEDIA QUERIE PARA DISPOSITIVOS 769PX */
+
+@media screen and (min-width:769px) {
+
+    .nav ul{
+        display: flex;
+    }
+
+    .button{
+        display: none !important;
+    }
+
+.footer{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer h2{
+    margin: 15px 30px;
+}
+
+.footer-li{
+    display: inline-block;
+    margin: 0 15 px;
+}
+
+.footer-li a{
+    text-decoration: none;
+}
+}
