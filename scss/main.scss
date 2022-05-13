@@ -1,122 +1,5 @@
-/* ---------------ESTILOS EN GENERAL----------------- */
-*{
-    padding: 0;
-    margin: 0;
-}
-body{
-    font-family: 'Fira Sans', sans-serif;
-    background-color: rgb(241, 241, 229);
-}
-.resaltar{
-    color: rgb(228, 228, 63);
-}
-/* -------------ESTILOS DE MI NAV------------------ */
-
-div h2{
-    font-size: 18px;
-}
-
-.nav ul{
-    display: none;
-}
-
-.barraDeNav{
-    background-color: yellow;
-}
-
-.nav{
-    background-color: yellow;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    line-height: 70px;
-    font-size: 1.5rem;
-}
-
-.nav ul{
-    width: auto;
-}
-
-.nav-item{
-    display: block;
-    margin: 0 5px;
-    transition-timing-function: ease;
-    transition-delay: 0.1s;
-}
-
-.nav-link{
-    transition-timing-function: ease;
-    transition-delay: 0.1s;
-}
-
-.nav-item:hover{
-    background-color: black;
-}
-
-.nav-link:hover{
-    color: white !important;
-}
-
-.nav-item .nav-link{
-    height: 90px;
-    text-decoration: none;
-    color: black;
-}
-/* -----------------ESTILOS DE MI HEADER------------- */
-
-.encabezado{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.encabezado h1{
-    font-size: 50px;
-}
-
-header p{
-    font-size: 30px;
-}
-
+@import "generalStyles";
 /* -----------------ESTILOS DE MI MAIN--------------- */
-
-.productos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.mates {
-    background-image: url("imagenes/productos.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 400px;
-    width: 280px;
-    font-size: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.munecos{
-    background-image: url("imagenes/nosotros.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 400px;
-    width: 280px;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.mates a, .munecos a{
-    color: rgb(209, 231, 9);
-    text-decoration: none;
-}
 
 .descripcion-producto{
     display: flex;
@@ -124,15 +7,6 @@ header p{
     align-items: center;
     justify-content: center;
 }
-
-.descripcion-producto p, h2{
-    text-align: center;
-}
-
-.about-imagen{
-    height: 310px;
-}
-
 .giftcard{
     height: 310px;
 }
@@ -142,23 +16,9 @@ header p{
     align-items: center;
     flex-direction: column;
 }
-
-/* --------------------ESTILOS DE MI MAIN, PARTE ABOUT---------- */
-
-.main-nosotros{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .about-imagen{
     width: 300px;
 }
-.about{
-    display: flex;
-}
-
 .about p{
     margin: 20px;
     font-size: 35px;
@@ -166,8 +26,10 @@ header p{
 
 /* ----------------ESTILOS HEADER, GIFTCARD-------------------- */
 
-.encabezado p{
-    text-align: center;
+.encabezado{
+    p{
+        text-align: center;
+    }
 }
 
 /* -----------ESTILOS DE MI MAIN, PARTE GIFTCARD-------------- */
@@ -175,12 +37,12 @@ header p{
 .apartado{
     display: flex;
     justify-content: space-between;
-}
 
-.apartado p{
-    font-size: 35px ;
-    text-align: center;
-} 
+    p{
+        font-size: 35px ;
+        text-align: center;
+    } 
+}
 
 #giftcard{
     text-align: center;
@@ -202,53 +64,31 @@ header p{
     justify-content: space-around;
     align-items: flex-start;
     height: 500px;
-}
 
-.formulario{
-    background-color: yellow;
-    width: 250px;
-    border: solid 4px;
-}
-.formulario-contacto{
-    display: block;
-}
+    .formulario{
+        background-color: $color-primary;
+        width: 250px;
+        border: solid 4px;
 
-.redes-logo{
-    height: 25px;
+        .formulario-contacto{
+            display: block;
+        }
+    }
+    div{
+        .redes-logo{
+            height: 25px;
+        }
+
+        #whap-num{
+            display: inline;
+        }
+        .redes-link{
+            text-decoration: none;
+            color: black;
+
+        }
+    }
 }
-
-#whap-num{
-    display: inline;
-}
-
-/* --------------------ESTILOS DE MI FOOTER---------------- */
-
-.footer{
-    background-color: yellow;
-    border: solid  black;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.footer h2{
-    margin: 15px 20px;
-}
-
-.footer-li{
-    display: block;
-}
-
-.footer ul{
-    margin: 0 5px;
-}
-
-.footer-li a{
-    text-decoration: none;
-}
-
-/* ESTILOS MEDIA QUERIA PARA EL MAIN DE MI NOSOTROS.HTML CON CONFIGURACION PARA 320PX */
 
 @media screen and (min-width:321px) {
     .about-imagen{
@@ -380,7 +220,7 @@ header p{
 
 @media screen and (min-width:769px) {
 
-    .nav ul{
+    .barraNav ul{
         display: flex;
     }
 

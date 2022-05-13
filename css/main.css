@@ -1,52 +1,35 @@
-/* ---------------ESTILOS EN GENERAL----------------- */
-* {
-  padding: 0;
-  margin: 0; }
-
 body {
   font-family: 'Fira Sans', sans-serif;
   background-color: #f1f1e5; }
-
-.resaltar {
-  color: #e4e43f; }
+  body .resaltar {
+    color: #c0c029; }
+  body .nav {
+    background-color: #f7f714; }
+    body .nav .barraNav {
+      background-color: #f7f714;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      line-height: 70px;
+      font-size: 1.5rem; }
 
 /* -------------ESTILOS DE MI NAV------------------ */
-div h2 {
-  font-size: 18px; }
-
-.nav ul {
-  display: none; }
-
-.barraDeNav {
-  background-color: yellow; }
-
-.nav {
-  background-color: yellow;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  line-height: 70px;
-  font-size: 1.5rem; }
-
-.nav ul {
+.nav-ul {
+  display: none;
   width: auto; }
-
-.nav-item {
-  display: block;
-  margin: 0 5px;
-  transition-timing-function: ease;
-  transition-delay: 0.1s; }
-
-.nav-link {
-  transition-timing-function: ease;
-  transition-delay: 0.1s; }
-
-.nav-item:hover {
-  background-color: black; }
-
-.nav-link:hover {
-  color: white !important; }
+  .nav-ul .nav-item {
+    display: block;
+    margin: 0 5px;
+    transition-timing-function: ease;
+    transition-delay: 0.1s; }
+    .nav-ul .nav-item:hover {
+      background-color: black; }
+    .nav-ul .nav-item .nav-link {
+      transition-timing-function: ease;
+      transition-delay: 0.1s; }
+      .nav-ul .nav-item .nav-link:hover {
+        color: white !important; }
 
 .nav-item .nav-link {
   height: 90px;
@@ -59,57 +42,34 @@ div h2 {
   flex-direction: column;
   align-items: center;
   text-align: center; }
+  .encabezado h1 {
+    font-size: 50px; }
+  .encabezado p {
+    font-size: 30px; }
 
-.encabezado h1 {
-  font-size: 50px; }
-
-header p {
-  font-size: 30px; }
+/* --------------------ESTILOS DE MI FOOTER---------------- */
+.footer {
+  background-color: #f7f714;
+  border: solid  black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .footer h2 {
+    margin: 15px 20px; }
+  .footer ul {
+    margin: 0 5px; }
+    .footer ul .footer-li {
+      display: inline-block; }
+      .footer ul .footer-li .footer-li a {
+        text-decoration: none; }
 
 /* -----------------ESTILOS DE MI MAIN--------------- */
-.productos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly; }
-
-.mates {
-  background-image: url("imagenes/productos.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 400px;
-  width: 280px;
-  font-size: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.munecos {
-  background-image: url("imagenes/nosotros.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 400px;
-  width: 280px;
-  font-size: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.mates a, .munecos a {
-  color: #d1e709;
-  text-decoration: none; }
-
 .descripcion-producto {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-
-.descripcion-producto p, h2 {
-  text-align: center; }
-
-.about-imagen {
-  height: 310px; }
 
 .giftcard {
   height: 310px; }
@@ -120,18 +80,8 @@ header p {
   align-items: center;
   flex-direction: column; }
 
-/* --------------------ESTILOS DE MI MAIN, PARTE ABOUT---------- */
-.main-nosotros {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
-
 .about-imagen {
   width: 300px; }
-
-.about {
-  display: flex; }
 
 .about p {
   margin: 20px;
@@ -145,10 +95,9 @@ header p {
 .apartado {
   display: flex;
   justify-content: space-between; }
-
-.apartado p {
-  font-size: 35px;
-  text-align: center; }
+  .apartado p {
+    font-size: 35px;
+    text-align: center; }
 
 #giftcard {
   text-align: center; }
@@ -167,43 +116,20 @@ header p {
   justify-content: space-around;
   align-items: flex-start;
   height: 500px; }
+  .main-contacto .formulario {
+    background-color: #f7f714;
+    width: 250px;
+    border: solid 4px; }
+    .main-contacto .formulario .formulario-contacto {
+      display: block; }
+  .main-contacto div .redes-logo {
+    height: 25px; }
+  .main-contacto div #whap-num {
+    display: inline; }
+  .main-contacto div .redes-link {
+    text-decoration: none;
+    color: black; }
 
-.formulario {
-  background-color: yellow;
-  width: 250px;
-  border: solid 4px; }
-
-.formulario-contacto {
-  display: block; }
-
-.redes-logo {
-  height: 25px; }
-
-#whap-num {
-  display: inline; }
-
-/* --------------------ESTILOS DE MI FOOTER---------------- */
-.footer {
-  background-color: yellow;
-  border: solid  black;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-
-.footer h2 {
-  margin: 15px 20px; }
-
-.footer-li {
-  display: block; }
-
-.footer ul {
-  margin: 0 5px; }
-
-.footer-li a {
-  text-decoration: none; }
-
-/* ESTILOS MEDIA QUERIA PARA EL MAIN DE MI NOSOTROS.HTML CON CONFIGURACION PARA 320PX */
 @media screen and (min-width: 321px) {
   .about-imagen {
     width: 300px; } }
@@ -285,7 +211,7 @@ header p {
 
 /* CONFIGURACION MEDIA QUERIE PARA DISPOSITIVOS 769PX */
 @media screen and (min-width: 769px) {
-  .nav ul {
+  .barraNav ul {
     display: flex; }
   .button {
     display: none !important; }
