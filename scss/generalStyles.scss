@@ -1,3 +1,25 @@
+
+/*MIXIN para mis configuraciones de flex*/
+
+@mixin flexible($direction, $justify, $align) {
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+/*MAPAS para el color de mis Redes en el apartado contactos*/
+
+$redes: (
+    whatsapp: rgb(0, 255, 98),
+    facebook: blue,
+    instagram: rgb(255, 0, 149)
+);
+@each $red, $color in $redes{
+    .color-#{$red}{
+        color: $color;
+    }
+}
+
 $color-primary: rgb(247, 247, 20);
 $resaltador:rgb(192, 192, 41);
 $web-color: rgb(241, 241, 229);
@@ -14,10 +36,12 @@ body{
         background-color: $color-primary;
 
         .barraNav{
-            background-color: $color-primary;
+            @extend .nav;
+
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include flexible(row,space-between ,center );
+
+
             width: 80%;
             line-height: 70px;
             font-size: 1.5rem;
@@ -64,10 +88,8 @@ body{
 
 .encabezado{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
+    @include flexible(column,center ,center );
+    
     h1{
         font-size: 50px;
     }
@@ -83,9 +105,9 @@ body{
     background-color: $color-primary;
     border: solid  black;
     border-radius: 10px;
+
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexible(row,justify-content ,center );
 
     h2{
         margin: 15px 20px;
