@@ -47,7 +47,9 @@
 /* --------------------MAIN PRODUCTOS---------------------- */
 
 .encabezado-productos{
-    @extend .descripcion-producto;
+    @include flexible(column,center ,center );
+    justify-items: center;
+    text-align: center;
 
     height: 400px;
 }

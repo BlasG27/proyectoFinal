@@ -77,7 +77,7 @@ body {
         text-decoration: none; }
 
 /* -----------------ESTILOS DE MI MAIN--------------- */
-.descripcion-producto, .about, .apartado, .encabezado-productos {
+.descripcion-producto, .about, .apartado {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,6 +110,11 @@ body {
 
 /* --------------------MAIN PRODUCTOS---------------------- */
 .encabezado-productos {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
   height: 400px; }
 
 /* -------------------MAIN CONTACTOS------------------------ */
@@ -196,10 +201,10 @@ body {
   /* ESTILOS DE MI MAIN */
   #main2 {
     display: block; }
-  .productos, .descripcion-producto, .about, .apartado, .encabezado-productos {
+  .productos, .descripcion-producto, .about, .apartado {
     display: flex;
     flex-direction: row; }
-  .descripcion-producto p, .about p, .apartado p, .encabezado-productos p, h2 {
+  .descripcion-producto p, .about p, .apartado p, h2 {
     text-align: center; }
   .about-imagen, .giftcard {
     height: 310px; }
