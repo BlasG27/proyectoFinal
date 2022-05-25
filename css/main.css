@@ -120,9 +120,14 @@ body {
 /* -------------------MAIN CONTACTOS------------------------ */
 .main-contacto {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
-  height: 500px; }
+  align-items: center;
+  padding: 2rem; }
+  @media screen and (min-width: 768px) {
+    .main-contacto {
+      align-items: flex-start;
+      flex-direction: row; } }
   .main-contacto .formulario {
     background-color: #f7f714;
     width: 250px;
@@ -164,7 +169,7 @@ body {
     font-size: 30px;
     text-align: center; }
   .giftcard1 {
-    height: 400px; }
+    height: 300px; }
   .section-gift-descrip {
     font-size: 30px;
     text-align: center; }

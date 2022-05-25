@@ -47,7 +47,7 @@
 /* --------------------MAIN PRODUCTOS---------------------- */
 
 .encabezado-productos{
-    @include flexible(column,center ,center );
+    @include flexible(column,center , center);
     justify-items: center;
     text-align: center;
 
@@ -58,9 +58,15 @@
 
 .main-contacto{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
-    height: 500px;
+    align-items: center;
+    padding: 2rem;
+
+    @media screen and (min-width:768px){
+        align-items: flex-start;
+        flex-direction: row;
+    }
 
     .formulario{
         background-color: $color-primary;
@@ -128,7 +134,7 @@
 }
 
 .giftcard1{
-    height: 400px;
+    height: 300px;
 }
 
 .section-gift-descrip{
