@@ -118,15 +118,28 @@
 
     .main-nosotros{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
-        height: 600px;
+        align-items: center;
+        margin: 4rem 0;
+
+        @media screen and (min-width:768px) {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        div{
+            p{
+                font-size: 28px;
+            }
+        }
+
+        .about-imagen{
+            height: 300px;
+        }
+
     }
     
-    .main-nosotros div p{
-        font-size: 28px;
-    }
     /* UTILIZO ESTA CONFIGURACION DE MEDIA QUERIE PARA EL MAIN DE MI GIFTCARD.HTML */
 #giftcard{
     font-size: 30px;

@@ -158,12 +158,20 @@ body {
   /* UTILIZO ESTA CONFIG DE MEDIA QUERIE PARA ESTILAR EL MAIN DE MI NOSOTROS.HTML */
   .main-nosotros {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    height: 600px; }
-  .main-nosotros div p {
-    font-size: 28px; }
+    align-items: center;
+    margin: 4rem 0; } }
+  @media screen and (min-width: 426px) and (min-width: 768px) {
+    .main-nosotros {
+      flex-direction: row;
+      align-items: flex-start; } }
+
+@media screen and (min-width: 426px) {
+    .main-nosotros div p {
+      font-size: 28px; }
+    .main-nosotros .about-imagen {
+      height: 300px; }
   /* UTILIZO ESTA CONFIGURACION DE MEDIA QUERIE PARA EL MAIN DE MI GIFTCARD.HTML */
   #giftcard {
     font-size: 30px;
