@@ -24,12 +24,16 @@
 
 </head>
 <body>
-  <nav class="nav d-flex justify-content-center">
-    <div class="barraNav .d-flex .justify-content-between align-items-center">
-        <h2>Tu Imaginacion En 3D</h2>
-        <ul class="nav-ul">
+  <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container divNav">
+        <a class="navbar-brand" href="index.html">Tu Imaginacion En 3D</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+        </button>
+        <div class="collapse navbar-collapse enlaces" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link"  href="index.html">Inicio</a>
+              <a class="nav-link" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="productos.html">Productos</a>
@@ -38,15 +42,15 @@
               <a class="nav-link" href="nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="giftcard.html">GiftCard</a>
-              </li>
+              <a class="nav-link" href="giftcard.html">giftcard</a>
+            </li>
             <li class="nav-item">
-              <a class="nav-link" href="contacto.html">Contacto</a>
+              <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
             </li>
           </ul>
-          <button type="button" class="btn btn-warning button">Menu</button>
-    </div>
-</nav>
+        </div>
+      </div>
+    </nav>
     <header class="encabezado">
             <h1 class="resaltar">Contactanos</h1>
             <p>Aqui podras encontrar diferentes formas de contactarnos</p>
@@ -71,14 +75,22 @@
           </form>
           <div>
           <p>Tambien podes contactarnos por nuestras redes sociales</p>
+
+          <div class="redes">
           <img class="redes-logo" src="imagenes/instagramlogo.jpg" alt="instagramlogo">
           <a class="redes-link" href="https://www.instagram.com/tuimaginacionen3d/" target="_blank"><span class="color-instagram">Instagram</span></a>
+          </div>
 
+          <div class="redes">
           <img class="redes-logo" src="imagenes/facebooklogo.jpg" alt="facebooklogo">
           <a class="redes-link" href="https://www.facebook.com/tuimaginacionen3d"target="_blank"><span class="color-facebook">Facebook</span></a>
+          </div>
 
+          <div class="redes">
           <img class="redes-logo" src="imagenes/whaplogo.jpg" alt="whaplogo">
           <p id="whap-num" ><span class="color-whatsapp">Whatsapp</span>:xxxx-xxxx</p>
+          </div>
+        
         </div>
       </main>
       <footer class="footer">
