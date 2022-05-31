@@ -31,31 +31,12 @@ body{
     .resaltar{
         color: $resaltador;
     }
-
-    // .nav{
-    //     background-color: $color-primary;
-    //     display: flex;
-    //     justify-content: center;
-
-    //     .barraNav{
-    //         @extend .nav;
-
-    //         display: flex;
-    //         @include flexible(row,space-between ,center );
-
-
-    //         width: 80%;
-    //         min-width: 895px;
-    //         line-height: 70px;
-    //         font-size: 1.3rem;
-            
-    //     }
-    // }
         .navbar{
             background-color:$color-primary !important ;
             .divNav{
                 a{
                     color: black;
+                    font-size: 1.3rem;
                 }
 
                 button{
@@ -65,52 +46,11 @@ body{
 
                 .enlaces{
                     flex-grow: 0 !important;
-                    .nabvar-nav{
-                        .nav-item{
-                            
-                            .nav-link{
-                                }
-                            }
-                        }
                     }
                 }
             }
 
-        }
-
-/* -------------ESTILOS DE MI NAV------------------ */
-
-// .nav-ul{
-//     display: none;
-//     width: auto;
-
-//     .nav-item{
-//         display: block;
-//         margin: 0 5px;
-//         transition-timing-function: ease;
-//         transition-delay: 0.1s;
-//         &:hover{
-//             background-color: black;
-//         }
-
-        // .nav-link{
-        //     transition-timing-function: ease;
-        //     transition-delay: 0.1s;
-        //     &:hover{
-        //         color: white !important;
-        //     }
-//         }
-        
-//     }
-
-
-// }
-
-// .nav-item .nav-link{
-//     height: 90px;
-//     text-decoration: none;
-//     color: black;
-// }
+}
 
 .descripcion-producto{
     text-align: center;
@@ -153,7 +93,8 @@ body{
         .footer-li{
             display: inline-block;
 
-            .footer-li a{
+                a{
+                    color: black;
                 text-decoration: none;
             }
         }
