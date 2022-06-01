@@ -31,57 +31,32 @@ body{
     .resaltar{
         color: $resaltador;
     }
+        .navbar{
+            background-color:$color-primary !important ;
+            .divNav{
+                a{
+                    color: black;
+                    font-size: 1.3rem;
+                }
 
-    .nav{
-        background-color: $color-primary;
+                button{
+                     border: 3px solid black;
+                     border-radius: 8px;
+                }
 
-        .barraNav{
-            @extend .nav;
-
-            display: flex;
-            @include flexible(row,space-between ,center );
-
-
-            width: 80%;
-            line-height: 70px;
-            font-size: 1.5rem;
-            
-        }
-    }
-
-}
-/* -------------ESTILOS DE MI NAV------------------ */
-
-.nav-ul{
-    display: none;
-    width: auto;
-
-    .nav-item{
-        display: block;
-        margin: 0 5px;
-        transition-timing-function: ease;
-        transition-delay: 0.1s;
-        &:hover{
-            background-color: black;
-        }
-
-        .nav-link{
-            transition-timing-function: ease;
-            transition-delay: 0.1s;
-            &:hover{
-                color: white !important;
+                .enlaces{
+                    flex-grow: 0 !important;
+                    }
+                }
             }
-        }
-        
-    }
-
 
 }
 
-.nav-item .nav-link{
-    height: 90px;
-    text-decoration: none;
-    color: black;
+.descripcion-producto{
+    text-align: center;
+    p{
+        font-size: 2rem;
+    }
 }
 
 /* -----------------ESTILOS DE MI HEADER------------- */
@@ -118,7 +93,8 @@ body{
         .footer-li{
             display: inline-block;
 
-            .footer-li a{
+                a{
+                    color: black;
                 text-decoration: none;
             }
         }

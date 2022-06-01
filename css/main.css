@@ -14,38 +14,21 @@ body {
   background-color: #f1f1e5; }
   body .resaltar {
     color: #c0c029; }
-  body .nav, body .nav .barraNav {
-    background-color: #f7f714; }
-    body .nav .barraNav {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      width: 80%;
-      line-height: 70px;
-      font-size: 1.5rem; }
+  body .navbar {
+    background-color: #f7f714 !important; }
+    body .navbar .divNav a {
+      color: black;
+      font-size: 1.3rem; }
+    body .navbar .divNav button {
+      border: 3px solid black;
+      border-radius: 8px; }
+    body .navbar .divNav .enlaces {
+      flex-grow: 0 !important; }
 
-/* -------------ESTILOS DE MI NAV------------------ */
-.nav-ul {
-  display: none;
-  width: auto; }
-  .nav-ul .nav-item {
-    display: block;
-    margin: 0 5px;
-    transition-timing-function: ease;
-    transition-delay: 0.1s; }
-    .nav-ul .nav-item:hover {
-      background-color: black; }
-    .nav-ul .nav-item .nav-link {
-      transition-timing-function: ease;
-      transition-delay: 0.1s; }
-      .nav-ul .nav-item .nav-link:hover {
-        color: white !important; }
-
-.nav-item .nav-link {
-  height: 90px;
-  text-decoration: none;
-  color: black; }
+.descripcion-producto, .about, .apartado {
+  text-align: center; }
+  .descripcion-producto p, .about p, .apartado p {
+    font-size: 2rem; }
 
 /* -----------------ESTILOS DE MI HEADER------------- */
 .encabezado {
@@ -73,7 +56,8 @@ body {
     margin: 0 5px; }
     .footer ul .footer-li {
       display: inline-block; }
-      .footer ul .footer-li .footer-li a {
+      .footer ul .footer-li a {
+        color: black;
         text-decoration: none; }
 
 /* -----------------ESTILOS DE MI MAIN--------------- */
@@ -87,14 +71,44 @@ body {
   height: 310px; }
 
 .about-imagen {
-  width: 300px; }
+  width: 20rem; }
 
 .about p {
   margin: 20px;
   font-size: 35px; }
 
+@media screen and (max-width: 771px) {
+  .about .section-about {
+    flex-direction: column; } }
+
+.nosotros {
+  text-align: center; }
+  .nosotros .informacion-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    @media screen and (min-width: 768px) {
+      .nosotros .informacion-about {
+        flex-direction: row; } }
+    .nosotros .informacion-about .imagen-informacion-nosotros {
+      height: 20rem; }
+    .nosotros .informacion-about .texto-informacion-nosotros {
+      font-size: 2rem; }
+
+.giftcard1 .section-gift1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  @media screen and (min-width: 768px) {
+    .giftcard1 .section-gift1 {
+      flex-direction: row; } }
+  .giftcard1 .section-gift1 .about-imagen1 {
+    height: 20rem; }
+
 /* ----------------ESTILOS HEADER, GIFTCARD-------------------- */
-.encabezado p {
+.encabezado {
   text-align: center; }
 
 /* -----------ESTILOS DE MI MAIN, PARTE GIFTCARD-------------- */
@@ -134,102 +148,61 @@ body {
     border: solid 4px; }
     .main-contacto .formulario .formulario-contacto {
       display: block; }
-  .main-contacto div .redes-logo {
-    height: 25px; }
-  .main-contacto div #whap-num {
-    display: inline; }
-  .main-contacto div .redes-link {
-    text-decoration: none;
-    color: black; }
-
-@media screen and (min-width: 321px) {
-  .about-imagen {
-    width: 300px; } }
+  .main-contacto div .redes {
+    margin: .5rem 0; }
+    .main-contacto div .redes .redes-logo {
+      height: 25px; }
+    .main-contacto div .redes #whap-num {
+      display: inline; }
+    .main-contacto div .redes .redes-link {
+      text-decoration: none;
+      color: black; }
 
 /* COMIENZO MEDIA QUERIE INDEX.MAIN */
-/* CONFIGURACION MEDIA QUERIE PARA DISPOSITIVOS 426PX */
-@media screen and (min-width: 426px) {
-  div h2 {
-    font-size: 30px; }
-  /* ESTILO DE MI FOOTER(generales) */
-  .footer-li {
-    display: inline-block;
-    margin: 0 5px; }
-  /* UTILIZO ESTA CONFIG DE MEDIA QUERIE PARA ESTILAR EL MAIN DE MI NOSOTROS.HTML */
-  .main-nosotros {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem 0; } }
-  @media screen and (min-width: 426px) and (min-width: 768px) {
-    .main-nosotros {
-      flex-direction: row;
-      align-items: flex-start; } }
+.main-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3rem 0; }
 
-@media screen and (min-width: 426px) {
-    .main-nosotros div p {
-      font-size: 28px; }
-    .main-nosotros .about-imagen {
-      height: 300px; }
-  /* UTILIZO ESTA CONFIGURACION DE MEDIA QUERIE PARA EL MAIN DE MI GIFTCARD.HTML */
-  #giftcard {
-    font-size: 30px;
-    text-align: center; }
-  .giftcard1 {
-    height: 300px; }
-  .section-gift-descrip {
-    font-size: 30px;
-    text-align: center; }
-  .main-giftcard {
-    display: flex;
-    flex-direction: row;
-    height: 600px; }
+.main-nosotros div p {
+  text-align: center;
+  max-width: 35rem;
+  font-size: 1.5rem; }
+
+/* UTILIZO ESTA CONFIGURACION DE MEDIA QUERIE PARA EL MAIN DE MI GIFTCARD.HTML */
+#giftcard {
+  font-size: 30px;
+  text-align: center; }
+
+.section-gift-descrip {
+  font-size: 30px;
+  text-align: center; }
+
+.main-giftcard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+  text-align: center; }
   .main-giftcard div {
+    max-width: 30rem;
     margin: 0 30px; }
-  .main-giftcard div p {
-    font-size: 30px; } }
-
-@media screen and (min-width: 430px) {
-  /* ESTILOS DE MI HEADER */
-  .encabezado {
-    font-size: 35px;
-    height: 320px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  header p {
-    font-size: 30px; }
-  .encabezado h1, .encabezado p {
-    animation-name: fade-in;
-    animation-timing-function: ease;
-    animation-duration: 1.2s; }
-  @keyframes fade-in {
-    0% {
-      opacity: 0;
-      transform: translatex(-100%); }
-    100% {
-      opacity: 1;
-      transform: translate(0); } }
-  /* ESTILOS DE MI MAIN */
-  #main2 {
-    display: block; }
-  .productos, .descripcion-producto, .about, .apartado {
-    display: flex;
-    flex-direction: row; }
-  .descripcion-producto p, .about p, .apartado p, h2 {
-    text-align: center; }
-  .about-imagen, .giftcard {
-    height: 310px; }
-  .about, .apartado {
-    flex-direction: row; } }
+    .main-giftcard div p {
+      font-size: 30px; }
 
 /* CONFIGURACION MEDIA QUERIE PARA DISPOSITIVOS 769PX */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .barraNav ul {
     display: flex; }
   .button {
     display: none !important; }
+  .main-nosotros {
+    flex-direction: row; }
   .footer {
     align-items: center;
     justify-content: space-between; }
