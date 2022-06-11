@@ -1,0 +1,7 @@
+.encabezado-productos {
+    @include flexible(column, center, center);
+    justify-items: center;
+    text-align: center;
+
+    height: 400px;
+}

@@ -1,0 +1,53 @@
+.main-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+
+    @media screen and (min-width:768px) {
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    .formulario {
+        background-color: $color-primary;
+        width: 250px;
+        border: solid 4px;
+
+        .formulario-contacto {
+            display: block;
+        }
+    }
+
+    div {
+        .redes {
+            margin: .5rem 0;
+
+            $redes: (whatsapp: rgb(0, 255, 98),
+                facebook: blue,
+                instagram: rgb(255, 0, 149));
+
+            @each $red,
+            $color in $redes {
+                .color-#{$red} {
+                    color: $color;
+                }
+            }
+
+            .redes-logo {
+                height: 25px;
+            }
+
+            #whap-num {
+                display: inline;
+            }
+
+            .redes-link {
+                text-decoration: none;
+                color: black;
+
+            }
+        }
+    }
+}

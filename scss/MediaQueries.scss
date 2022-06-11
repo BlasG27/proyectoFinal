@@ -1,0 +1,33 @@
+
+@media screen and (min-width:768px) {
+
+    .barraNav ul {
+        display: flex;
+    }
+
+    .button {
+        display: none !important;
+    }
+
+    .main-nosotros {
+        flex-direction: row;
+    }
+
+    .footer {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer h2 {
+        margin: 15px 30px;
+    }
+
+    .footer-li {
+        display: inline-block;
+        margin: 0 15 px;
+    }
+
+    .footer-li a {
+        text-decoration: none;
+    }
+}
